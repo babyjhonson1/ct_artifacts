@@ -1,0 +1,3 @@
+.gitlab-ci.yml
+src/CT_simulation/__pycache__/
+pyproject.toml
