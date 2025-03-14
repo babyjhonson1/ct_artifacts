@@ -50,7 +50,7 @@ def generate2(image_size=(512, 512), radius=(50, 90), num_vertices=8, mu=4000):
 
     return final_array
 
-def degradation(image, theta, max_p=1e5, sigma=1e-1):
+def degradation(image, theta=np.linspace(0., 180., 128, endpoint=False), max_p=1e5, sigma=1e-1):
     sinogram = radon(image, theta=theta, circle = False)
     sinogram = random_noise(sinogram, mode='gaussian', var=sigma, clip=False)
     sinogram_real = np.clip(sinogram, None, max_p)

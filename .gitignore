@@ -2,3 +2,4 @@
 src/CT_simulation/__pycache__/
 pyproject.toml
 .DS_Store
+src/.DS_Store
